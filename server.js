@@ -6,6 +6,13 @@ const path = require('path');
 
 const app = express();
 
+// Import and configure CORS
+const cors = require('cors');
+app.use(cors({
+  origin: ['https://harini628.github.io', 'http://localhost:5000'],
+  credentials: true
+}));
+
 // Middleware
 app.use(express.json());
 
@@ -28,3 +35,4 @@ app.get("/find-donor.html", (req, res) => res.sendFile(path.join(__dirname, "pub
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
