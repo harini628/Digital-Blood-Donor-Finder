@@ -1,10 +1,12 @@
-🩸 Digital Blood Donor Finder
-📖 About the Project
+🩸 DIGITAL BLOOD DONOR FINDER
+
+📖 About the project
 
 Digital Blood Donor Finder is a full-stack web application designed to simplify the process of managing and finding blood donors.
 It allows users to add donor details to a central database and enables others to search for donors based on blood group, age, and location.
 
 This project aims to provide a digital platform that bridges the gap between blood donors and recipients, making the donation process faster, more reliable, and accessible.
+
 
 ✨ Key Features
 
@@ -17,6 +19,7 @@ This project aims to provide a digital platform that bridges the gap between blo
 🖥️ User-Friendly Interface: Clean, modern UI with responsive design.
 
 🛠️ Backend API: Powered by Node.js, Express, and MongoDB for secure storage and data handling.
+
 
 🎯 Project Goal
 
