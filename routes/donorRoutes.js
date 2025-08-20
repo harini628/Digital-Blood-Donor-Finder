@@ -2,7 +2,7 @@ const express = require('express');
 const Donor = require('../models/Donor');
 const router = express.Router();
 
-// ➕ Add Donor
+// Add Donor
 router.post("/", async (req, res) => {
   try {
     // Check if donor already exists
@@ -34,7 +34,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// 📋 Get All Donors
+// Get All Donors
 router.get("/", async (req, res) => {
   try {
     const donors = await Donor.find({ isActive: true }).sort({ createdAt: -1 });
@@ -52,7 +52,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// 🔍 Search Donors
+// Search Donors
 router.get("/search", async (req, res) => {
   try {
     const { bloodGroup, age, location, available } = req.query;
@@ -133,5 +133,6 @@ router.delete("/:id", async (req, res) => {
     });
   }
 });
+
 
 module.exports = router;
